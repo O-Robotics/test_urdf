@@ -15,13 +15,13 @@
     </link>
 
 
-    <joint name="Chassis_joint" type="fixed">
+    <joint name="chassis_joint" type="fixed">
         <parent link="base_link" />
-        <child  link="Chassis_link" />
+        <child  link="chassis_link" />
         <origin xyz="0 0 0" rpy="0 0 0"/>
     </joint>
 
-    <link name="Chassis_link">
+    <link name="chassis_link">
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>           
