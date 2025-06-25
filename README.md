@@ -1,13 +1,13 @@
-# amr-sweeper_description
+# amrsweeper_description
 
-This repository provides the full URDF (Unified Robot Description Format) files for the amr-sweeper robot, designed for autonomous cleaning operations. It includes 3D models, configuration files, and launch scripts to facilitate simulation and integration within a ROS 2 environment.
+This repository provides the full URDF (Unified Robot Description Format) files for the amrsweeper robot, designed for autonomous cleaning operations. It includes 3D models, configuration files, and launch scripts to facilitate simulation and integration within a ROS 2 environment.
 
 
 
 ## Features
 ![structure](https://github.com/user-attachments/assets/c968ac2e-3a3e-4bcd-a6e1-c69000b22b92)
 
-- URDF model of the amr-sweeper robot
+- URDF model of the amrsweeper robot
 - Simulation-ready launch files for Gazebo
 - Detailed 3D meshes and configuration files
 - Modular structure for easy customization
@@ -27,7 +27,7 @@ Navigate to your ROS 2 workspace's `src` directory and clone the repository:
 
 ```bash
 cd ~/ros2_ws/src
-git clone https://github.com/O-Robotics/amr-sweeper_description.git
+git clone https://github.com/O-Robotics/amrsweeper_description.git
 ```
 
 
@@ -48,7 +48,7 @@ Return to the root of your workspace and build the package:
 
 ```bash
 cd ~/ros2_ws
-colcon build --packages-select amr-sweeper_description
+colcon build --packages-select amrsweeper_description
 ```
 
 
@@ -89,7 +89,7 @@ To launch the robot's description in RViz:
 
 
 ```bash
-ros2 launch amr-sweeper_description amr-sweeper_description.launch.py
+ros2 launch amrsweeper_description amrsweeper_description.launch.py
 ```
 
 
@@ -99,7 +99,7 @@ To launch the robot in a Gazebo simulation environment:
 
 
 ```bash
-ros2 launch amr-sweeper_description amr-sweeper_description_sim.launch.py
+ros2 launch amrsweeper_description amrsweeper_description_sim.launch.py
 ```
 
 

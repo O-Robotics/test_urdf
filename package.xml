@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>amr-sweeper_description</name>
+  <name>amrsweeper_description</name>
   <version>0.0.0</version>
-  <description>amr-sweeper ROS2 URDF Description Package</description>
+  <description>amrsweeper ROS2 URDF Description Package</description>
   <maintainer email="alfol@o-robotics.com">Alf Olsen</maintainer>
   <license>Apache-2.0</license>
 

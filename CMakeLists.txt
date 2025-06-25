@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(amr-sweeper_description)
+project(amrsweeper_description)
 
 
 
