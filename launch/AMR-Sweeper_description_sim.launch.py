@@ -15,10 +15,10 @@ from launch_ros.actions import Node
 def generate_launch_description():
 
     # Specify the name of the package
-    package_name = 'AMR-Sweeper_description'
+    package_name = 'amr-sweeper_description'
     
 
-    # Launch AMR-Sweeper Robot State Publisher with sim_time=true and ros2_control=false
+    # Launch amr-sweeper Robot State Publisher with sim_time=true and ros2_control=false
     sim_launch = IncludeLaunchDescription(           
         PythonLaunchDescriptionSource([os.path.join(
             get_package_share_directory(package_name), 'launch', 'rsp.launch.py')]), 
@@ -71,10 +71,10 @@ def generate_launch_description():
 
 
     # Spawn Sweepe in Gazebo
-    spawn_AMRSweeper_sim = Node(                                #note AMR-Sweeper name without "-" due to python
+    spawn_AMRSweeper_sim = Node(                                #note amr-sweeper name without "-" due to python
         package='ros_gz_sim', 
         executable='create',
-        arguments=['-topic', 'robot_description', '-name', 'AMR-Sweeper_description', '-z', '0.13'],
+        arguments=['-topic', 'robot_description', '-name', 'amr-sweeper_description', '-z', '0.13'],
         output='screen'
     )
 
@@ -106,7 +106,7 @@ def generate_launch_description():
         rviz2,
         world_arg,
         gz_sim,
-        spawn_AMRSweeper_sim,                       #note AMR-Sweeper name without "-"
+        spawn_AMRSweeper_sim,                       #note amr-sweeper name without "-"
         ros_gz_bridge,
         ros_gz_image_bridge
     ])
